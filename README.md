@@ -9,9 +9,6 @@
 
 ```bash
 git config --global user.name "Your Name"
-```
-
-3. 输入以下命令，并回车 (Type the following command and press Enter)
 
 ```bash
 git config --global user.email "your-email@example.com"
