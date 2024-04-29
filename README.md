@@ -1,6 +1,6 @@
 # 学习编程 (Learn Programming)
 
-## 配置全局用户名和邮箱
+## 配置全局用户名和邮箱 (Configure Global User Name and Email)
 
 ### 步骤1：打开终端配置用户名和邮箱（Step 1: Open the terminal to configure the user name and email）
 
