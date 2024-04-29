@@ -1,5 +1,31 @@
 # 学习编程 (Learn Programming)
 
+## 配置全局用户名和邮箱
+
+### 步骤1：打开终端配置用户名和邮箱（Step 1: Open the terminal to configure the user name and email）
+
+1. 打开终端 (Open the terminal)
+2. 输入以下命令，并回车 (Type the following command and press Enter)
+
+```bash
+git config --global user.name "Your Name"
+```
+
+3. 输入以下命令，并回车 (Type the following command and press Enter)
+
+```bash
+git config --global user.email "your-email@example.com"
+```
+
+### 步骤2：验证配置是否成功 (Step 2: Verify the configuration)
+
+1. 打开终端 (Open the terminal)
+2. 输入以下命令，并回车 (Type the following command and press Enter)
+
+```bash
+git config --global --list
+```
+
 ## 克隆GitHub仓库到本地 (Clone GitHub Repository to Local)
 
 ### 步骤 1: 转至存放仓库的本地目录 (Step 1: Navigate to the directory where you want to clone the repository)
