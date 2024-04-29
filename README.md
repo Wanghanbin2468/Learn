@@ -74,3 +74,39 @@ git commit -m "详细描述你的更改"  # 用有意义的信息提交更改 (C
 ```bash
 git push origin main  # 如果主分支名为main；如果是master，则使用git push origin master (If the main branch is named main; if it is master, use git push origin master)
 ```
+## 本地更新
+要保持本地仓库与GitHub上的仓库同步，当GitHub仓库有更新时，你需要执行以下步骤：
+
+打开命令行：首先，打开你的终端（如CMD、PowerShell、Terminal或VSCode的终端）。
+
+### 步骤1：导航到本地仓库：使用cd命令切换到本地仓库的根目录。例如：
+
+```bash
+cd path/to/your/local/repository # 检查远程状态（可选）：使用git status或git remote update查看远程分支的最新状态，确认是否有更新。
+```
+
+### 步骤2：拉取远程更改： 使用git fetch命令获取远程仓库的所有最新更改，但不自动合并到你的工作分支。
+
+```Bash
+git fetch origin
+```
+
+如果你只想获取特定分支的更新，可以指定分支名，如：
+
+```Bash
+git fetch origin main # 其中main是分支名，根据实际情况替换。
+```
+### 步骤4：查看并合并更改：
+
+查看差异：使用git diff命令查看本地与远程分支之间的差异。
+合并更改：使用git merge命令将远程分支的更改合并到你的当前分支。如果之前是git fetch origin main，则执行：
+```Bash
+git merge origin/main # 如果有冲突，需要手动解决冲突，然后添加并提交解决冲突后的文件。
+```
+### 替代方案：直接拉取并合并： 如果你确定不会有冲突或者愿意处理可能出现的冲突，可以直接使用git pull命令，它等同于执行git fetch随后git merge。
+
+```Bash
+git pull origin main # 这将直接从远程分支main拉取并合并到你的当前分支。
+```
+
+完成以上步骤后，你的本地仓库就与GitHub上的仓库保持同步了。记得定期重复这些步骤，特别是当你知道远程仓库有新提交时。
